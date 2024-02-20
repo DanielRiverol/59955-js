@@ -1,6 +1,6 @@
 let numeroComision = 54010; // Valor inicial
 const datos = [
-        //{ id: 1, nombre: 'Conceptos generales', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_1` },
+        { id: 1, nombre: 'Conceptos generales', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_1` },
         // { id: 2, nombre: 'Control de flujos', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_2` },
         // { id: 3, nombre: 'Bucles e iteraciones', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_3` },
         // { id: 4, nombre: 'Funciones', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_4` },
