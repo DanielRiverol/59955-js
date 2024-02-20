@@ -24,4 +24,6 @@ h1 {
 ul {
   list-style: none;
 }
-table{margin-bottom: 2rem !important;}
+table {
+  margin-bottom: 2rem !important;
+}
