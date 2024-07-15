@@ -1,4 +1,4 @@
-let numeroComision = 54010; // Valor inicial
+let numeroComision = 59955; // Valor inicial
 const datos = [
         { id: 1, nombre: 'Conceptos generales', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_1` },
         // { id: 2, nombre: 'Control de flujos', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_2` },
