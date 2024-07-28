@@ -19,7 +19,7 @@ const datos = [
         // { id: 17, nombre: 'Frameworks y Node.js', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_17` },
         ];
 const afterClass=[
-        // { id: 1, nombre: 'After ciclos', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/after_ciclos` },
+        { id: 1, nombre: 'After ciclos', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/after_ciclos` },
         // { id: 2, nombre: 'After Búsqueda', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/after_busqueda` },
         // { id: 3, nombre: 'After DOM', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/after_dom` },
         ]
