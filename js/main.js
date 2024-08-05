@@ -5,7 +5,7 @@ const datos = [
         { id: 3, nombre: 'Bucles e iteraciones', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_3` },
         { id: 4, nombre: 'Funciones', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_4` },
         { id: 5, nombre: 'Objetos', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_5` },
-        // { id: 6, nombre: 'Arrays', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_6` },
+        { id: 6, nombre: 'Arrays', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_6` },
         // { id: 7, nombre: 'Funciones de orden Superior', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_7` },
         // { id: 8, nombre: 'Funciones de orden Superior II', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_8` },
         // { id: 9, nombre: 'DOM', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_9` },

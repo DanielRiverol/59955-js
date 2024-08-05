@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,windows
 
+### txt
+*.txt
 ### macOS ###
 # General
 .DS_Store
