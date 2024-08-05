@@ -4,6 +4,8 @@
 ### Clases ###
 \
 
+### txt
+*.txt
 ### macOS ###
 # General
 .DS_Store
