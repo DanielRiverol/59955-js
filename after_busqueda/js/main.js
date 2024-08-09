@@ -19,3 +19,58 @@ const servicios = [
     img: "micropigmentacion.jpeg",
   },
 ];
+const cliente = {
+  id: 234,
+  nombre: "Julio",
+  apellido: "Agostini",
+  direccion: "Calle falsa 123",
+  idPrestamo: 1
+};
+const cliente2 = {
+  id: 235,
+  nombre: "Julio",
+  apellido: "Agostini",
+  direccion: "Calle falsa 123",
+  idPrestamo: [2, 3]
+};
+
+const prestamo = {
+  id: 1,
+  monto: 2000,
+  plazo: 30,
+  interes: 20,
+  idCliente:234
+};
+
+// const prestamosActivos = []
+// const carteClientes= []
+// carteClientes.push(cliente,cliente2)
+// prestamosActivos.push(prestamo)
+// console.log(carteClientes);
+// console.log(prestamosActivos);
+
+
+// function buscarCliente(arr, id ){
+
+//   //podre el id Del prestamo?
+//   return arr.find(el => el.id === id)
+// }
+
+// buscarCliente(carteClientes, 234)
+
+// const clienteEncontrado= buscarCliente(carteClientes, 234)
+
+// console.log(clienteEncontrado);
+// function buscarPrestamos(arr, id){
+//   return arr.filter(el=> el.id===id)
+// }
+
+// console.log(buscarPrestamos(prestamosActivos, 1));//dentro de la funcion buscarPrestamos(arr idCliente)
+
+function buscarPorNombre(arr, filtro){
+//  return arr.find(el=> el.nombre === filtro)
+ return arr.find(el=> el.nombre.includes(filtro.toLowerCase()))
+}
+
+const manicura= buscarPorNombre(servicios, "MaNiCuRa")
+console.log(manicura);
