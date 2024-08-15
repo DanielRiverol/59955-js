@@ -40,7 +40,11 @@ const datos = [
     nombre: "Funciones de orden Superior II",
     enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/main/clase_8`,
   },
-  // { id: 9, nombre: 'DOM', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_9` },
+  {
+    id: 9,
+    nombre: "DOM",
+    enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_9`,
+  },
   // { id: 10, nombre: 'Eventos', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_10` },
   // { id: 11, nombre: 'Storage y JSON', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_11` },
   // { id: 12, nombre: 'Operadores avanzados', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_12` },
