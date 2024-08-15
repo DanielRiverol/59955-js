@@ -26,16 +26,4 @@ const personas = [
   "Diego",
   "Isabella",
   "Miguel",
-  "Liam",
-  "María",
-  "Lucas",
-  "Ana",
-  "Elena",
-  "Laura",
-  "Isabel",
-  "Sofía",
-  "Oliver",
-  "Amelia",
-  "Pedrito",
 ];
-
