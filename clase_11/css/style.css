@@ -7,9 +7,20 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
+
 body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
   min-height: 100dvh;
 }
+
+/* Estilos para modo oscuro */
+body.dark-mode {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
 .wrapper {
   padding: 1rem;
 }
@@ -96,7 +107,10 @@ form input {
   background-color: rgb(68, 134, 209);
   color: white;
 }
-
+.btn-change {
+  background-color: cornflowerblue;
+  color: #ffffff;
+}
 .box {
   background-color: #eaff6a;
   padding: 40px;
