@@ -47,7 +47,7 @@ const datos = [
   },
   { id: 10, nombre: 'Eventos', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_10` },
   { id: 11, nombre: 'Storage y JSON', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_11` },
-  // { id: 12, nombre: 'Operadores avanzados', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_12` },
+   { id: 12, nombre: 'Operadores avanzados', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_12` },
   // { id: 13, nombre: 'Operadores avanzados II + workshop', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_13` },
   // { id: 14, nombre: 'Librerías', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_14` },
   // { id: 15, nombre: 'Asincronía y promesas', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_15` },
