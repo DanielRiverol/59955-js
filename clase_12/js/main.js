@@ -44,13 +44,15 @@ function crearHtml(arr) {
   //validar qué pasa cuando no recibo ningun array
   let html;
   for (const el of arr) {
+    const { img, id, nombre, precio } = el;
+
     html = `<div class="card">
-                <img src=" ./img/${el.img}" alt="${el.nombre}">
+                <img src=" ./img/${img}" alt="${nombre}">
                 <hr>
-                <h3>${el.nombre}</h3>
-                <p>Precio: $${el.precio} </p>
+                <h3>${nombre}</h3>
+                <p>Precio: $${precio} </p>
                   <div class="card-action">
-                    <button class="btn btn-success" id="${el.id}">Agregar</button>
+                    <button class="btn btn-success" id="${id}">Agregar</button>
                   </div>
               </div>`;
     //se la agrego al contenedor
@@ -58,14 +60,14 @@ function crearHtml(arr) {
     contenedor.innerHTML += html;
   }
 }
-crearHtml(servicios);
+// crearHtml(servicios);
 
 // localStorage.setItem('saludo', 'Hola Flanders')
-localStorage.setItem("isValid", true);
-localStorage.setItem("edad", 20);
+// localStorage.setItem("isValid", true);
+// localStorage.setItem("edad", 20);
 
-const numeros = [1, 23, 4, 5, 6, 7, 78];
-localStorage.setItem("numeros", numeros);
+// const numeros = [1, 23, 4, 5, 6, 7, 78];
+// localStorage.setItem("numeros", numeros);
 
 //ver los valores almacenados
 const saludo = localStorage.getItem("saludo");
@@ -73,7 +75,7 @@ const saludo = localStorage.getItem("saludo");
 const isValid = localStorage.getItem("isValid") === "true"; //trampa LS Guarda String
 let igaulA = 5 == 10; //variable booleana
 // console.log(isValid);
-const nums = localStorage.getItem("numeros").split(",");
+// const nums = localStorage.getItem("numeros").split(",");
 
 // localStorage.setItem('darkMode', 'activo')
 const toggleButton = document.getElementById("darkModeToggle");
@@ -94,8 +96,8 @@ toggleButton.addEventListener("click", () => {
 
 //limpiar el LS
 
-localStorage.removeItem("darkmode");
-localStorage.removeItem("saludo");
+// localStorage.removeItem("darkmode");
+// localStorage.removeItem("saludo");
 //localStorage.clear() //elimina todas claves
 //sessionStorage
 // sessionStorage.setItem("sesion", "activa");
@@ -131,8 +133,6 @@ const inputUser = document.querySelector("#user"),
   inputPass = document.querySelector("#pass"),
   checkbox = document.querySelector("#check"),
   form = document.querySelector("formulario");
-  console.log(form);
-  
 
 //funcion para alamacenamiento
 function guardarEnStorage(storage) {
@@ -170,7 +170,7 @@ let temp = 25;
 // temp > 30 ? console.log("Dia caluroso") : console.log("Dia agradable");
 
 // console.log(temp > 30 ? "dia caluroso" : "dia agradable");
-contenedor.innerHTML = temp > 30 ? "dia caluroso" : "dia agradable";
+// contenedor.innerHTML = temp > 30 ? "dia caluroso" : "dia agradable";
 
 const persona = {
   nombre: "Juanito",
@@ -199,21 +199,21 @@ const almacen = [];
 
 //OP OR ||
 
-const persona2 = {
-  nombre: "Juanito",
-  apellido: "Arcoiris",
-  edad: 17,
-  activo: false,
-}; //thruty
+// const persona2 = {
+//   nombre: "Juanito",
+//   apellido: "Arcoiris",
+//   edad: 17,
+//   activo: false,
+// }; //thruty
 
-const persona3 = null; //falsy
+// const persona3 = null; //falsy
 
-console.log(persona2 || "NO existe esa persona");
-console.log(persona3 || "NO existe esa persona");
+// console.log(persona2 || "NO existe esa persona");
+// console.log(persona3 || "NO existe esa persona");
 
-let user = JSON.parse(localStorage.getItem("usuario")) || "NO hay usuario";
+// let user = JSON.parse(localStorage.getItem("usuario")) || "NO hay usuario";
 
-console.log(user);
+// console.log(user);
 
 // let tienda;
 
@@ -222,18 +222,117 @@ console.log(user);
 // } else {
 //   tienda = [];
 // }
-let tienda = JSON.parse(localStorage.getItem("tienda")) || [];
+// let tienda = JSON.parse(localStorage.getItem("tienda")) || [];
 
-console.log(tienda);
+// console.log(tienda);
 
-// Nullish ??
-let opciones = {
-  limite: 0,
+// // Nullish ??
+// let opciones = {
+//   limite: 0,
+// };
+
+// console.log(opciones.limite || 10);
+// console.log(opciones.limite ?? 10);
+
+// //op encadenamiento opcional  (?)
+// console.log(persona3?.nombre);
+// console.log(persona2.nombre);
+
+//destructructuring
+const persona1 = { nombre: "Homero" };
+const persona2 = {
+  id_persona: 3,
+  nombre: "Juanito",
+  apellido: "Arcoiris",
+  edad: 17,
+  activo: false,
+  manager: persona1,
+};
+const clima = {
+  location: "Buenos Aires",
+  city: "CABA",
+  latitude: -37,
+  longitude: 50,
+  tempe: { st: 2, t: 8 },
 };
 
-console.log(opciones.limite || 10);
-console.log(opciones.limite ?? 10);
+const { tempe } = clima;
+console.log(tempe);
 
-//op encadenamiento opcional  (?)
-console.log(persona3?.nombre);
-console.log(persona2.nombre);
+const { st: sensacion, t: temperatura } = tempe;
+console.log(sensacion);
+console.log(temperatura);
+
+// console.log(persona2.nombre);
+// console.log(persona2.apellido);
+
+// const { edad, nombre, apellido, activo, manager, id_persona: id } = persona2;
+
+// console.log(id);
+// console.log(nombre);
+// console.log(apellido);
+// console.log(activo);
+// console.log(edad);
+// console.log(manager);
+// //alias
+// const { nombre: nombre_manager } = manager;
+// console.log(nombre_manager);
+
+// function desestructurar(obj) {
+//   const { nombre, edad } = obj;
+//   console.log(`Nombre: ${nombre}, edad: ${edad}`);
+// }
+
+//REACT como props
+function desestructurar({ nombre, edad }) {
+  console.log(`Nombre: ${nombre}, edad: ${edad}`);
+}
+desestructurar(persona2);
+
+const numeros = [1, -4, 3, 7, 10];
+
+// const [,,primero, ,segundo, tercero, cuarto] = numeros;
+
+// console.log(numeros[0]);//equivale a
+// console.log(primero);//esto
+// console.log(segundo);
+// console.log(cuarto);
+
+//spread operator ...
+const numerosPositivos = [2, 11, 17, 37];
+const numerosNegativos = [-1, -4, -3, -7, -10];
+console.log(Math.min(...numeros)); //1, 2, -4, 3, 7, 10
+console.log(Math.max(...numeros)); //1, 2, -4, 3, 7, 10
+
+// const conjuntoNumeros= numerosPositivos.concat(numerosNegativos)
+
+const conjuntoNumeros = [...numerosPositivos, ...numerosNegativos];
+console.log(conjuntoNumeros);
+
+const persona5 = {
+  nombre: "Lisa",
+  edad: 8,
+};
+console.log(persona5);
+
+const copiaPersona = {
+  ...persona5,
+  hobbie: "Tocar saxofon",
+  edad: 9,
+};
+
+console.log(copiaPersona);
+
+//parametros rest
+
+function sumar(...nums){
+  // console.log(nums);
+  return nums.reduce((acc,num)=> acc + num, 0)
+}
+
+
+console.log(sumar(1, 4, 6, -2));
+console.log(sumar(1));
+console.log(sumar(1,2,6,0,9, 5.6));
+
+
