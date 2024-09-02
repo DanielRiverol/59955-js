@@ -65,7 +65,7 @@ const afterClass = [
     nombre: "After Búsqueda",
     enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/after_busqueda`,
   },
-  // { id: 3, nombre: 'After DOM', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/after_dom` },
+   { id: 3, nombre: 'After DOM', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/after_dom` },
 ];
 
 document.title = `Comisión ${numeroComision}`;
