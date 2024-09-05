@@ -50,7 +50,7 @@ const datos = [
    { id: 12, nombre: 'Operadores avanzados', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_12` },
   // { id: 13, nombre: 'Operadores avanzados II + workshop', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_13` },
   { id: 14, nombre: 'Librerías', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_14` },
-  // { id: 15, nombre: 'Asincronía y promesas', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_15` },
+  { id: 15, nombre: 'Asincronía y promesas', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_15` },
   // { id: 16, nombre: 'Ajax y Fetch', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_16` },
   // { id: 17, nombre: 'Frameworks y Node.js', enlace: `https://github.com/DanielRiverol/${numeroComision}-js/tree/clases/clase_17` },
 ];
