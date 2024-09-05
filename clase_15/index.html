@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.13.1/dist/sweetalert2.all.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.13.1/dist/sweetalert2.min.css" />
+
+    <!-- Toastify -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0bb154f3a0.js"
+      crossorigin="anonymous"></script>
+    <title>Clase 15 | Comisión 59955</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="titulo"><span>Clase 15</span></h1>
+      <hr />
+      <h2 id="secundario">Asincronía y promesas</h2>
+
+      <main>
+        <div class="contenedor" id="fechas">
+          <h3>Reservas</h3>
+        
+          <div class="p-3">
+            <label for="checkIn">Fecha inicial:</label>
+            <input type="date" id="checkIn" name="checkIn" min="" max="" />
+          </div>
+          <div class="p-3">
+            <label for="checkOut">Fecha final:</label>
+            <input type="date" id="checkOut" name="checkOut" min="" max="" />
+          </div>
+          <div class="p-3">
+            <input
+              type="button"
+              class="btn btn-success"
+              value="Calcular"
+              id="calcular" />
+          </div>
+        </div>
+
+        <p class="mensaje"></p>
+
+        <div class="card hide">
+          <h2>👋​ Soy un pop-up</h2>
+          <p>Voy a desaparecer pronto! ⏳​</p>
+        </div>
+        <!-- <input type="text" id="text"> -->
+        <button type="button" class="btn btn-normal" id="btn">Click</button>
+        <div class="contenedor">
+          <!-- contenido dinámico -->
+          CARGANDO...⏱️ 
+        </div>
+      </main>
+    </div>
+    <!-- Toastify -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js"></script>
+    <!-- custon js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
