@@ -227,12 +227,27 @@ const pedirServicios = (arr) => {
 
 let servicioDesdeOtroLugar = [];
 
-pedirServicios()
-  .then((response) => {
-    servicioDesdeOtroLugar = response;
-    console.log(servicioDesdeOtroLugar);
-    renderServicios(servicioDesdeOtroLugar)
-  })
-  .catch((error) => {
-    console.log(error);
+// pedirServicios(servicios)
+//   .then((response) => {
+//     servicioDesdeOtroLugar = response;
+//     console.log(servicioDesdeOtroLugar);
+//     renderServicios(servicioDesdeOtroLugar)
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+//fetch
+fetch("https://swapi.dev/api/people/5")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+
+    const { name, height: altura, skin_color : piel} = data;
+    console.log(name);
+    console.log(altura);
+    console.log(piel);
+    //renderPersonaje(data)
   });
+
+console.log("Codigo siguiente");
