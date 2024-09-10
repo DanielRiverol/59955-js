@@ -136,6 +136,8 @@ btnCalcular.addEventListener("click", () => {
 //     clearInterval(intervalo);
 //   }
 // }, 1000);
-// PROMESAS
 
+
+
+// PROMESAS
 
