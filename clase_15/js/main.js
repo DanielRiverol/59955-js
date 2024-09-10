@@ -39,30 +39,30 @@ function logSquare(num) {
 
 const DateTime = luxon.DateTime;
 
-// const ahora = DateTime.now();
-// const local = DateTime.local(2024, 1, 25, 12, 10);
-// // console.log(local);
-// // console.log(ahora);
-// const dt = DateTime.fromObject(
-//   { day: 12, month: 3 },
-//   { zone: "America/Buenos_Aires" }
-// );
+/*const ahora = DateTime.now();
+const local = DateTime.local(2024, 1, 25, 12, 10);
+// console.log(local);
+// console.log(ahora);
+const dt = DateTime.fromObject(
+  { day: 12, month: 3 },
+  { zone: "America/Buenos_Aires" }
+);
 
-// console.log(ahora.toString());
-// console.log(ahora.year);
-// console.log(ahora.month);
-// console.log(ahora.day);
+console.log(ahora.toString());
+console.log(ahora.year);
+console.log(ahora.month);
+console.log(ahora.day);
 
-// console.log(ahora.toLocaleString(DateTime.DATE_FULL));
-// console.log(ahora.toLocaleString(DateTime.TIME_SIMPLE));
-// console.log(ahora.setLocale('de').toLocaleString(DateTime.DATE_FULL));
-// console.log(ahora.setLocale('fr').toLocaleString(DateTime.DATETIME_SHORT));
+console.log(ahora.toLocaleString(DateTime.DATE_FULL));
+console.log(ahora.toLocaleString(DateTime.TIME_SIMPLE));
+console.log(ahora.setLocale('de').toLocaleString(DateTime.DATE_FULL));
+console.log(ahora.setLocale('fr').toLocaleString(DateTime.DATETIME_SHORT));
 
-// const suma = ahora.plus({hours:5, minutes: 20})
-// console.log(suma.toLocaleString(DateTime.TIME_SIMPLE));
+const suma = ahora.plus({hours:5, minutes: 20})
+console.log(suma.toLocaleString(DateTime.TIME_SIMPLE));
 
-// const dosMeseMAs = ahora.plus({ month: 2});
-// console.log(dosMeseMAs.toLocaleString(DateTime.DATE_FULL));
+const dosMeseMAs = ahora.plus({ month: 2});
+console.log(dosMeseMAs.toLocaleString(DateTime.DATE_FULL));*/
 
 const btnCalcular = document.getElementById("calcular"),
   dates = document.querySelectorAll('input[type="date"]');
@@ -99,11 +99,11 @@ btnCalcular.addEventListener("click", () => {
 // console.log('Preparo mate')
 // console.log('Disfruto el mate');
 //Eventloop
-setTimeout(() => {
-  console.log("Segunda ejecucion");
-}, 120000000); //me ejecuto en una pila diferente (soy el plato dificil)
-console.log("Primera ejecucion");
-console.log("Tercera ejecucion");
+// setTimeout(() => {
+//   console.log("Segunda ejecucion");
+// }, 120000000); //me ejecuto en una pila diferente (soy el plato dificil)
+// console.log("Primera ejecucion");
+// console.log("Tercera ejecucion");
 
 // btn.addEventListener("click", () => {
 //   setTimeout(() => {
@@ -127,14 +127,15 @@ console.log("Tercera ejecucion");
 
 //clearInterval
 
-let contador = 0;
-let intervalo = setInterval(() => {
-  contador++;
-  console.log(contador);
+// let contador = 0;
+// let intervalo = setInterval(() => {
+//   contador++;
+//   console.log(contador);
 
-  if (contador == 5) {
-    clearInterval(intervalo);
-  }
-}, 1000);
-// promesas
+//   if (contador == 5) {
+//     clearInterval(intervalo);
+//   }
+// }, 1000);
+// PROMESAS
+
 
