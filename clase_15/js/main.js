@@ -80,20 +80,20 @@ function calcularEstadia(checkIn, checkOut) {
   return total.as("days");
 }
 
-btnCalcular.addEventListener("click", () => {
-  const checkIn = DateTime.fromISO(dates[0].value);
-  const checkOut = DateTime.fromISO(dates[1].value);
-  const estadia = calcularEstadia(checkIn, checkOut);
-  // console.log(estadia);
-  Swal.fire({
-    title: `El precio de tu estadia por ${estadia} dias es : ${estadia * 8000}`,
-    showDenyButton: true,
-    showCancelButton: true,
-    confirmButtonColor: "green",
-    confirmButtonText: "Guardar",
-    denyButtonText: `No quiero`,
-  });
-});
+// btnCalcular.addEventListener("click", () => {
+//   const checkIn = DateTime.fromISO(dates[0].value);
+//   const checkOut = DateTime.fromISO(dates[1].value);
+//   const estadia = calcularEstadia(checkIn, checkOut);
+//   // console.log(estadia);
+//   Swal.fire({
+//     title: `El precio de tu estadia por ${estadia} dias es : ${estadia * 8000}`,
+//     showDenyButton: true,
+//     showCancelButton: true,
+//     confirmButtonColor: "green",
+//     confirmButtonText: "Guardar",
+//     denyButtonText: `No quiero`,
+//   });
+// });
 
 // console.log("Pongo el agua calentar");
 // console.log('Preparo mate')
@@ -137,7 +137,102 @@ btnCalcular.addEventListener("click", () => {
 //   }
 // }, 1000);
 
-
-
 // PROMESAS
 
+// console.log(
+//   new Promise((resolve, reject) => {
+//     //cuerpo de la promesa
+//   })
+// );
+
+// const eventoFuturo = (valor) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (valor == true) {
+//         resolve("Promesa resuelta");
+//       } else {
+//         reject("Promesa Rechaza");
+//       }
+//     }, 3000);
+//   });
+// };
+
+// console.log(eventoFuturo(true));
+// console.log(eventoFuturo(false));
+
+const devolverPrenda = (respuesta) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (respuesta == "si") {
+        resolve("SI gracias por por prestame la campera");
+      } else {
+        reject("Uh no me acuerdo, no la tengo");
+      }
+    }, 3000);
+  });
+};
+
+// console.log("Hola, te acordas la campera que te preste el sabado?");
+// // console.log(devolverPrenda('si'));
+// // console.log(devolverPrenda('no'));
+// // console.log(devolverPrenda());
+// // then / catch
+// devolverPrenda("si")
+//   .then((response) => {
+//     console.log(response);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   }).finally(()=>{
+//     console.log("Ok gracias");
+
+//   });
+const renderServicios = (arr) => {
+  //validar que pasa cuando no recibo un array
+  contenedor.innerHTML = "";
+  let html;
+  for (const item of arr) {
+    const { id, nombre, img, precio } = item;
+    html = `
+        <div class="card">
+      		<div class="card-image">
+        	<img src="../img/${img}">
+        	<span class="card-title">${nombre.toUpperCase()}</span>
+       </div>
+     	 <div class="card-content"> 
+     		<p>$${precio}</p>
+      </div>
+      <div class="card-action">
+        <button class="btn btn-normal" id="${id}">Comprar</button>
+      </div>
+     </div>
+     `;
+    contenedor.innerHTML += html;
+  }
+};
+// renderServicios(servicios)
+
+const pedirServicios = (arr) => {
+  contenedor.innerHTML = "CARGANDO...⏱️ ";
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (arr) {
+        resolve(arr);
+      } else {
+        reject("error de datos");
+      }
+    }, 3000);
+  });
+};
+
+let servicioDesdeOtroLugar = [];
+
+pedirServicios()
+  .then((response) => {
+    servicioDesdeOtroLugar = response;
+    console.log(servicioDesdeOtroLugar);
+    renderServicios(servicioDesdeOtroLugar)
+  })
+  .catch((error) => {
+    console.log(error);
+  });
